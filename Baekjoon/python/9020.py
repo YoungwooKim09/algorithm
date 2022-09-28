@@ -6,7 +6,7 @@ var = list(map(int, sys.stdin.read().splitlines()))
 
 for i in range(1, len(var)) :
     testcase = var[i]
-    prime_num = []
+    # prime_num = []
     # partition_list = []
     # diff_partition = []
 
