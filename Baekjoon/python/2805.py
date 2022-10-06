@@ -20,11 +20,11 @@ while start <= end :
         if tree > mid :
             total = total + (tree - mid)
 
-    if total > m :
+    if total >= m :
+        res = mid
         start = mid + 1
 
     else :
-        res = mid
         end = mid - 1
 
 print(res)
