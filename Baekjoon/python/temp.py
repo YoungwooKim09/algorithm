@@ -1,7 +1,7 @@
-tmp = []
+import sys
 
-if not tmp :
-    print(True)
+sys.stdin = open('input.txt', 'r')
 
-else :
-    print(False)
+temp = []
+
+temp.append()
