@@ -1,7 +1,7 @@
-import sys
+a = 8
+b = -5
 
-sys.stdin = open('input.txt', 'r')
+c = a // b
+d = int(a / b)
 
-temp = []
-
-temp.append()
+print(c, d)
