@@ -10,7 +10,7 @@ input = sys.stdin.readline
 def dfs(k, count) :
     visited[k] = 1
 
-    for i in tree[k] :
+    for i in tree[k] :                      # for loop로 인해 각 노드들에 대한 count 값 다 더해짐
         if A[i] == 1 :
             count += 1
 

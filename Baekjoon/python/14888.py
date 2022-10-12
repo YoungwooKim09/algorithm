@@ -73,6 +73,7 @@ def dfs(count, res, plus, minus, multiply, divide):
         return
 
     # 각 연산자를 출발점으로 하여 연산 시작 - 트리 구조로 재귀 함수가 호출됨
+    # if elif else 구문을 사용하면 분기가 나눠지므로 if 문으로 진입하였을 때, elif와 else로 가지 않게 됨
     if plus :
         dfs(count + 1, res + num[count], plus - 1, minus, multiply, divide)
         

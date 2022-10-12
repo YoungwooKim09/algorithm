@@ -19,8 +19,6 @@ N, M, V = map(int, input().split())
 # for node in graph :
 #     node.sort()
 
-# print(graph)
-
 matrix = [[0] * (N + 1) for _ in range(N + 1)]
 
 visited = [0] * (N + 1)

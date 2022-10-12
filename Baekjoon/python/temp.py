@@ -1,7 +1,7 @@
-a = 8
-b = -5
+a = 10
 
-c = a // b
-d = int(a / b)
+if a >= 10 :
+    print(1)
 
-print(c, d)
+elif a > 5 :
+    print(2)
