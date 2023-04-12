@@ -35,6 +35,7 @@ rl.on("line", function (line) {
       sortedArr.push(a[aPoint++]);
     }
   }
+  
   sortedArr = [...sortedArr, ...a.slice(aPoint), ...b.slice(bPoint)]; // slice()에서 begin이 배열의 길이보다 큰 경우 빈 배열 반환
   console.log(sortedArr.join(" "));
   process.exit();
