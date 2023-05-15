@@ -36,7 +36,7 @@ def dijkstra(start) :
             cost = dist + i[0]
 
             if cost < distance[i[1]] :
-                distance[i[1]] = cost                   # (dist, now)의 dist는 distance[now]와 대응 - 갱신된 값이 distnace에 저장됨
+                distance[i[1]] = cost                   # (dist, now)의 dist는 distance[now]와 대응 - 갱신된 값이 distance에 저장됨
                 heapq.heappush(heap, (cost, i[1]))      # 갱신된 최단 거리 테이블로부터 값을 가져와 저장
                                                         # 갱신될 때마다 우선 순위 큐에 넣어줌으로써 i[1]의 인접 노드들에 대해서도
 dijkstra(s)                                             # 위 과정을 반복할 수 있도록 함
@@ -44,12 +44,3 @@ print(distance[e])
 
 # if distance[now] < dist :
 #             continue 
-
-# 방문 처리가 된 노드는 무시할 수 있도록 함
-# 이때 방문 여부를 기록하는 하나의 테이블을 사용하지 않고,
-# 최단 거리 테이블과 비교하여 꺼낸 원소를 무시하는 방법을 사용할 수 있음
-# 위 조건을 만족하는 경우는 이미 처리가 끝나 최단 거리 값이 결정된 것으로 간주할 수 있음
-# 따라서 해당 case를 무시하고 다음 단계 진행
-
-# 위 문제는 방문 여부를 판단할 필요가 없음
-# 최단 거리 테이블을 기준으로 생각힐 것

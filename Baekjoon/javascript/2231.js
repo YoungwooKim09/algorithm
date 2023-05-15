@@ -1,5 +1,4 @@
 const readline = require("readline");
-const { cachedDataVersionTag } = require("v8");
 
 const rl = readline.createInterface({
   input: process.stdin,
