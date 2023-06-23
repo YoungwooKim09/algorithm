@@ -50,7 +50,6 @@ function steadyGene(n, gene) {
   while (j < n && i < n) {
     if (!isSteady(map, req)) {
       map.set(gene[j], map.get(gene[j]) - 1);
-      console.log(map);
       j++;
     } else {
       min = Math.min(min, j - i);
